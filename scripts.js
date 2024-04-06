@@ -47,32 +47,32 @@ let valorant = {
 let cs2 = {
   name: "Counter-Strike 2",
   image: cs2url,
-  release: "Sept 2023",
+  release: "September 2023",
 };
 let overwatch = {
   name: "Overwatch 2",
   image: owurl,
-  release: "Oct 2022",
+  release: "October 2022",
 };
 let thefinals = {
   name: "The Finals",
   image: finalsurl,
-  release: "Dec 2023",
+  release: "December 2023",
 };
 let dota = {
-    name: "Dota 2",
-    image: dotaurl,
-    release: "July 2013"
+  name: "Dota 2",
+  image: dotaurl,
+  release: "July 2013",
 };
 let league = {
-    name: "League of Legends",
-    image: lolurl,
-    release: "Oct 2009"
+  name: "League of Legends",
+  image: lolurl,
+  release: "October 2009",
 };
 let smite = {
-    name: "Smite",
-    image: smiteurl,
-    release: "Mar 2014"
+  name: "Smite",
+  image: smiteurl,
+  release: "March 2014",
 };
 
 // This is an array of strings (Video Games objects)
@@ -88,13 +88,16 @@ function showFpsCards() {
   cardContainer.innerHTML = "";
   const templateCard = document.querySelector(".card");
 
+  const bullet1 = document.getElementById("bullet-1");
+  bullet1.innerHTML = "";
   for (let i = 0; i < fpsGames.length; i++) {
     // This part of the code doesn't scale very well! After you add your
     // own data, you'll need to do something totally different here.
     let imageURL = fpsGames[i].image;
-
+    let title = fpsGames[i].name;
+    let date = fpsGames[i].release;
     const nextCard = templateCard.cloneNode(true); // Copy the template card
-    editCardContent(nextCard, fpsGames[i].name, imageURL); // Edit title and image
+    editCardContent(nextCard, title, imageURL, date); // Edit title and image
     cardContainer.appendChild(nextCard); // Add new card to the container
   }
 }
@@ -103,18 +106,21 @@ function showMobaCards() {
   cardContainer.innerHTML = "";
   const templateCard = document.querySelector(".card");
 
+  const bullet2 = document.getElementById("bullet-2");
+  bullet2.innerHTML = "";
   for (let i = 0; i < mobaGames.length; i++) {
     // This part of the code doesn't scale very well! After you add your
     // own data, you'll need to do something totally different here.
     let imageURL = mobaGames[i].image;
     let title = mobaGames[i].name;
+    let date = mobaGames[i].release;
     const nextCard = templateCard.cloneNode(true); // Copy the template card
-    editCardContent(nextCard, title, imageURL); // Edit title and image
+    editCardContent(nextCard, title, imageURL, date); // Edit title and image
     cardContainer.appendChild(nextCard); // Add new card to the container
   }
 }
 
-function editCardContent(card, newTitle, newImageURL) {
+function editCardContent(card, newTitle, newImageURL, newReleaseDate) {
   card.style.display = "block";
 
   const cardHeader = card.querySelector("h2");
@@ -123,6 +129,9 @@ function editCardContent(card, newTitle, newImageURL) {
   const cardImage = card.querySelector("img");
   cardImage.src = newImageURL;
   cardImage.alt = newTitle + " Poster";
+
+  const cardBullet = card.querySelector("ul");
+  cardBullet.textContent = "Release Date: " + newReleaseDate;
 
   // You can use console.log to help you debug!
   // View the output by right clicking on your website,
@@ -133,6 +142,7 @@ function editCardContent(card, newTitle, newImageURL) {
 // This calls the addCards() function when the page is first loaded
 document.addEventListener("DOMContentLoaded", showFpsCards);
 document.addEventListener("DOMContentLoaded", showMobaCards);
+
 function quoteAlert() {
   console.log("Button Clicked!");
   alert(

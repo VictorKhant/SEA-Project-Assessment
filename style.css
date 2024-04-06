@@ -52,6 +52,11 @@ body {
     margin-top: 0;
     font-size: 20px;
 }
+.card-content ul {
+    margin: 0;
+    margin-top:1px;
+    font-size: 15px;
+}
 
 .card img {
     width: 100%;
