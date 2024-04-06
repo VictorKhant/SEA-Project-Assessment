@@ -22,72 +22,125 @@
  *    with the string you added to the array, but a broken image.
  * 
  */
+// Images of Video Games
+const valurl =
+  "https://m.media-amazon.com/images/M/MV5BNmNhM2NjMTgtNmIyZC00ZmVjLTk4YWItZmZjNGY2NThiNDhkXkEyXkFqcGdeQXVyODU4MDU1NjU@._V1_FMjpg_UX1000_.jpg";
+const cs2url =
+  "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRi3Y52UizXitbh4DWaEcY-QrweJJqBsSzWwnBJO-A4XLfrBRyIzHrryBFmPCZYboZhe-eHUg";
+const owurl =
+  "https://m.media-amazon.com/images/M/MV5BYjBkNTJkOWUtNTg1ZS00NGZhLWIxMGUtOWE0ZDA0NzRkODM3XkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_FMjpg_UX1000_.jpg";
+const finalsurl =
+  "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIsJWvzMOrvU4CaqXGPsdEzyYJlMYidYBBnVn96eob7JOQCJe1Ze6vFq8v1v1MmHRmLWw3FA";
+const dotaurl = 
+  "https://m.media-amazon.com/images/M/MV5BZDQxMjVmMjYtZTU4OC00MzRhLTljNTgtMTAwMDg3YzhlY2M4L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg";
+const lolurl =
+  "https://cdn1.epicgames.com/offer/24b9b5e323bc40eea252a10cdd3b2f10/EGS_LeagueofLegends_RiotGames_S2_1200x1600-905a96cea329205358868f5871393042";
+const smiteurl =
+  "https://image.api.playstation.com/vulcan/ap/rnd/202301/2322/CM072lQwXunn2Z23lGXtpw4A.png";
 
-// This is an array of strings (Video Games images)
-const valurl="https://m.media-amazon.com/images/M/MV5BNmNhM2NjMTgtNmIyZC00ZmVjLTk4YWItZmZjNGY2NThiNDhkXkEyXkFqcGdeQXVyODU4MDU1NjU@._V1_FMjpg_UX1000_.jpg";
+  // These are the objects of video games
+let valorant = {
+  name: "Valorant",
+  image: valurl,
+  release: "June 2020",
+};
+let cs2 = {
+  name: "Counter-Strike 2",
+  image: cs2url,
+  release: "Sept 2023",
+};
+let overwatch = {
+  name: "Overwatch 2",
+  image: owurl,
+  release: "Oct 2022",
+};
+let thefinals = {
+  name: "The Finals",
+  image: finalsurl,
+  release: "Dec 2023",
+};
+let dota = {
+    name: "Dota 2",
+    image: dotaurl,
+    release: "July 2013"
+};
+let league = {
+    name: "League of Legends",
+    image: lolurl,
+    release: "Oct 2009"
+};
+let smite = {
+    name: "Smite",
+    image: smiteurl,
+    release: "Mar 2014"
+};
 
-const cs2url = "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRi3Y52UizXitbh4DWaEcY-QrweJJqBsSzWwnBJO-A4XLfrBRyIzHrryBFmPCZYboZhe-eHUg";
+// This is an array of strings (Video Games objects)
+let fpsGames = [valorant, cs2, overwatch, thefinals];
+let mobaGames = [dota, league, smite];
 
-const owurl = "https://m.media-amazon.com/images/M/MV5BYjBkNTJkOWUtNTg1ZS00NGZhLWIxMGUtOWE0ZDA0NzRkODM3XkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_FMjpg_UX1000_.jpg";
-
-const finalsurl = "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIsJWvzMOrvU4CaqXGPsdEzyYJlMYidYBBnVn96eob7JOQCJe1Ze6vFq8v1v1MmHRmLWw3FA";
-
-// This is an 2D array of strings (Video Games titles & images)
-let videoGames = [
-    ["Valorant", valurl],
-    ["Counter-Strike 2", cs2url],
-    ["Overwatch", owurl],
-    ["The Finals", finalsurl]
-]
-
-
-// Your final submission should have much more data than this, and 
+// Your final submission should have much more data than this, and
 // you should use more than just an array of strings to store it all.
 
-
 // This function adds cards the page to display the data in the array
-function showCards() {
-    const cardContainer = document.getElementById("card-container");
-    cardContainer.innerHTML = "";
-    const templateCard = document.querySelector(".card");
-    
-    for (let i = 0; i < videoGames.length; i++) {
+function showFpsCards() {
+  const cardContainer = document.getElementById("card-container");
+  cardContainer.innerHTML = "";
+  const templateCard = document.querySelector(".card");
 
-        // This part of the code doesn't scale very well! After you add your
-        // own data, you'll need to do something totally different here.
-        let imageURL=videoGames[i][1];
+  for (let i = 0; i < fpsGames.length; i++) {
+    // This part of the code doesn't scale very well! After you add your
+    // own data, you'll need to do something totally different here.
+    let imageURL = fpsGames[i].image;
 
-        const nextCard = templateCard.cloneNode(true); // Copy the template card
-        editCardContent(nextCard, videoGames[i][0], imageURL); // Edit title and image
-        cardContainer.appendChild(nextCard); // Add new card to the container
-    }
+    const nextCard = templateCard.cloneNode(true); // Copy the template card
+    editCardContent(nextCard, fpsGames[i].name, imageURL); // Edit title and image
+    cardContainer.appendChild(nextCard); // Add new card to the container
+  }
+}
+function showMobaCards() {
+  const cardContainer = document.getElementById("card-container2");
+  cardContainer.innerHTML = "";
+  const templateCard = document.querySelector(".card");
+
+  for (let i = 0; i < mobaGames.length; i++) {
+    // This part of the code doesn't scale very well! After you add your
+    // own data, you'll need to do something totally different here.
+    let imageURL = mobaGames[i].image;
+    let title = mobaGames[i].name;
+    const nextCard = templateCard.cloneNode(true); // Copy the template card
+    editCardContent(nextCard, title, imageURL); // Edit title and image
+    cardContainer.appendChild(nextCard); // Add new card to the container
+  }
 }
 
-
 function editCardContent(card, newTitle, newImageURL) {
-    card.style.display = "block";
+  card.style.display = "block";
 
-    const cardHeader = card.querySelector("h2");
-    cardHeader.textContent = newTitle;
+  const cardHeader = card.querySelector("h2");
+  cardHeader.textContent = newTitle;
 
-    const cardImage = card.querySelector("img");
-    cardImage.src = newImageURL;
-    cardImage.alt = newTitle + " Poster";
+  const cardImage = card.querySelector("img");
+  cardImage.src = newImageURL;
+  cardImage.alt = newTitle + " Poster";
 
-    // You can use console.log to help you debug!
-    // View the output by right clicking on your website,
-    // select "Inspect", then click on the "Console" tab
-    console.log("new card:", newTitle, "- html: ", card);
+  // You can use console.log to help you debug!
+  // View the output by right clicking on your website,
+  // select "Inspect", then click on the "Console" tab
+  console.log("new card:", newTitle, "- html: ", card);
 }
 
 // This calls the addCards() function when the page is first loaded
-document.addEventListener("DOMContentLoaded", showCards);
+document.addEventListener("DOMContentLoaded", showFpsCards);
+document.addEventListener("DOMContentLoaded", showMobaCards);
 function quoteAlert() {
-    console.log("Button Clicked!")
-    alert("I guess I can kiss heaven goodbye, because it got to be a sin to look this good!");
+  console.log("Button Clicked!");
+  alert(
+    "I guess I can kiss heaven goodbye, because it got to be a sin to look this good!"
+  );
 }
 
 function removeLastCard() {
-    videoGames.pop(); // Remove last item in titles array
-    showCards(); // Call showCards again to refresh
+  fpsGames.pop(); // Remove last item in titles array
+  showFpsCards(); // Call showCards again to refresh
 }
