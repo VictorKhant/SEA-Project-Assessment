@@ -29,6 +29,7 @@ import videoGames from "./data.js";
 let filteredGames = [];
 let sort_genre = "";
 let sort_order = "";
+let is_searched = false;
 // Your final submission should have much more data than this, and
 // you should use more than just an array of strings to store it all.
 
@@ -40,6 +41,8 @@ function showCards(games = videoGames) {
 
   const templateCard = document.querySelector(".card");
 
+  //const user_input = document.querySelector("#pokeSearch");
+  //const user_input_trimmed = user_input.value.trim;
   for (let i = 0; i < games.length; i++) {
     // This part of the code doesn't scale very well! After you add your
     // own data, you'll need to do something totally different here.
@@ -87,12 +90,18 @@ window.removeLastCard = function () {
 };
 
 window.filteredCard = function (platform) {
+  let temp = [];
+  if (!is_searched) {
+    temp = videoGames;
+  } else {
+    temp = filteredGames;
+  }
   filteredGames = [];
   if (platform == "ALL") return showCards();
 
-  for (let i = 0; i < videoGames.length; i++) {
-    if (videoGames[i].platform.includes(platform)) {
-      filteredGames.push(videoGames[i]);
+  for (let i = 0; i < temp.length; i++) {
+    if (temp[i].platform.includes(platform)) {
+      filteredGames.push(temp[i]);
     }
   }
   if (sort_genre != "") return sortedCard(sort_genre, sort_order);
@@ -104,14 +113,16 @@ window.sortedCard = function (category = "release", order = "descend") {
   sort_genre = category;
   sort_order = order;
 
-  if (filteredGames.length == 0) filteredGames = videoGames;
+  if (filteredGames.length == 0) {
+    filteredGames = videoGames;
+  }
 
   if (category == "rating") {
     filteredGames.sort(
       (a, b) => parseFloat(a.user_review) - parseFloat(b.user_review)
     );
-  } else {
-    videoGames.sort(
+  } else if (category == "release") {
+    filteredGames.sort(
       (a, b) => new Date(a.release_date) - new Date(b.release_date)
     );
   }
@@ -119,4 +130,27 @@ window.sortedCard = function (category = "release", order = "descend") {
   return showCards(filteredGames);
 };
 
-window.searchCard = function () {};
+// Function to perform search
+function searchGames() {
+  if (filteredGames.length == 0) filteredGames = videoGames;
+  const searchText = document
+    .getElementById("search-input")
+    .value.toLowerCase();
+
+  // Check if the search text is empty
+  if (searchText.length == 0) {
+    is_searched = false;
+    filteredGames = videoGames;
+    return showCards(videoGames); // Display all games if the search is cleared
+  }
+
+  const searchedGames = filteredGames.filter((game) =>
+    game.name.toLowerCase().includes(searchText)
+  );
+  filteredGames = searchedGames;
+  is_searched = true;
+  return showCards(filteredGames);
+}
+
+// Event listener for search input
+document.getElementById("search-input").addEventListener("input", searchGames);
