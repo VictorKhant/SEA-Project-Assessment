@@ -5,6 +5,7 @@
     <title>Video Games | Home</title>
     <meta name="description" content="A Catalog of popular Video Games">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script type="module" src="scripts.js"></script>
 </head>
 
@@ -32,52 +33,62 @@
         <h1 class="title">Popular Video Games</h1>
     </header>
 
+    <form>
+        <div class="search">
+            <span class="search-icon material-symbols-outlined">search</span>
+            <input id="search-input" type="search" placeholder="Search">
+        </div>
+    </form>
+
     <h3 class="minititle">Filter</h3>
     <div class="filter">
-        <button onclick="">
+        <button onclick="filteredCard('ALL')">
+            ALL
+        </button>
+        <button onclick="filteredCard('Nintendo 64')">
             Nintendo
         </button>
-        <button onclick="">
+        <button onclick="filteredCard('PlayStation')">
             Playstation
         </button>
-        <button onclick="">
+        <button onclick="filteredCard('Xbox')">
             Xbox
         </button>
-        <button onclick="">
+        <button onclick="filteredCard('Wii')">
             Wii
         </button>
-        <button onclick="">
+        <button onclick="filteredCard('PC')">
             PC
         </button>
-        <button onclick="">
+        <button onclick="filteredCard('Dreamcast')">
             Dreamcast
         </button>
-        <button onclick="">
+        <button onclick="filteredCard('GameCube')">
             Gamecube
         </button>
-        <button onclick="">
+        <button onclick="filteredCard('Switch')">
             Switch
         </button>
-        <button onclick="">
+        <button onclick="filteredCard('Game Boy')">
             Game Boy
         </button>
-        <button onclick="">
+        <button onclick="filteredCard('3DS')">
             3DS
         </button>
     </div>
 
     <h3 class="minititle">Sort by</h3>
     <div class="filter">
-        <button onclick="">
+        <button onclick="sortedCard('rating','ascend')">
             rating low-high
         </button>
-        <button onclick="">
+        <button onclick="sortedCard('rating','descend')">
             rating high-low
         </button>
-        <button onclick="">
+        <button onclick="sortedCard('release','descend')">
             release new-old
         </button>
-        <button onclick="">
+        <button onclick="sortedCard('release','ascend')">
             release old-new
         </button>
 

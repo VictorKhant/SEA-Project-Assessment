@@ -26,21 +26,24 @@
 import videoGames from "./data.js";
 
 // This is an array of strings (Video Games objects)
-
+let filteredGames = [];
+let sort_genre = "";
+let sort_order = "";
 // Your final submission should have much more data than this, and
 // you should use more than just an array of strings to store it all.
 
 // This function adds cards the page to display the data in the array
-function showCards() {
+
+function showCards(games = videoGames) {
   const cardContainer = document.getElementById("card-container");
   cardContainer.innerHTML = "";
 
   const templateCard = document.querySelector(".card");
 
-  for (let i = 0; i < videoGames.length; i++) {
+  for (let i = 0; i < games.length; i++) {
     // This part of the code doesn't scale very well! After you add your
     // own data, you'll need to do something totally different here.
-    let title = videoGames[i];
+    let title = games[i];
     const nextCard = templateCard.cloneNode(true); // Copy the template card
     editCardContent(nextCard, title); // Edit title and image
 
@@ -69,7 +72,7 @@ function editCardContent(card, newTitle) {
 }
 
 // This calls the addCards() function when the page is first loaded
-document.addEventListener("DOMContentLoaded", showCards);
+document.addEventListener("DOMContentLoaded", showCards());
 
 window.quoteAlert = function () {
   console.log("Button Clicked!");
@@ -82,3 +85,38 @@ window.removeLastCard = function () {
   videoGames.pop(); // Remove last item in titles array
   showCards(); // Call showCards again to refresh
 };
+
+window.filteredCard = function (platform) {
+  filteredGames = [];
+  if (platform == "ALL") return showCards();
+
+  for (let i = 0; i < videoGames.length; i++) {
+    if (videoGames[i].platform.includes(platform)) {
+      filteredGames.push(videoGames[i]);
+    }
+  }
+  if (sort_genre != "") return sortedCard(sort_genre, sort_order);
+
+  return showCards(filteredGames);
+};
+
+window.sortedCard = function (category = "release", order = "descend") {
+  sort_genre = category;
+  sort_order = order;
+
+  if (filteredGames.length == 0) filteredGames = videoGames;
+
+  if (category == "rating") {
+    filteredGames.sort(
+      (a, b) => parseFloat(a.user_review) - parseFloat(b.user_review)
+    );
+  } else {
+    videoGames.sort(
+      (a, b) => new Date(a.release_date) - new Date(b.release_date)
+    );
+  }
+  if (order == "descend") filteredGames.reverse();
+  return showCards(filteredGames);
+};
+
+window.searchCard = function () {};
