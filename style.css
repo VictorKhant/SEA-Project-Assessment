@@ -47,7 +47,7 @@ body {
     color: #0088A9;
 }
 
-button{
+.navdiv button{
     background-color: rgba(0, 136, 169, 1);
     margin-left: 10px;
     border-radius: 50px;
@@ -57,7 +57,7 @@ button{
     transition: all 0.3s ease 0s;
 }
 
-button:hover {
+.navdiv button:hover {
     background-color: rgba(0, 136, 169, 0.8);
 }
 
@@ -91,11 +91,7 @@ button a{
     justify-content: center;
     margin: 20px;
 }
-#card-container2 {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-}
+
 
 .card {
     width: 300px;
@@ -115,11 +111,7 @@ button a{
     margin-top: 0;
     font-size: 20px;
 }
-.card-content ul {
-    margin: 0;
-    margin-top:1px;
-    font-size: 15px;
-}
+
 
 .card img {
     width: 100%;
@@ -148,5 +140,28 @@ button a{
 }
 
 .game-image{
-    max-height:250px;
+    max-height:200px;
+}
+
+.card-content li{
+    color: #24252A;
+    margin-top:5px;
+    margin-bottom:5px;
+    list-style: none;
+}
+
+.filter{
+    margin-left: 3cm;
+}
+.filter button{
+    font-size: 1.5em;
+    background-color: #CBD6E2;
+    margin-right: 20px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+}
+
+.filter button:hover{
+    background-color: rgba(0, 136, 169, 1);
 }
