@@ -184,7 +184,7 @@ function changeFilterColor(clickedButton) {
   });
 
   // Change the background color of the clicked button
-  clickedButton.style.backgroundColor = "pink";
+  clickedButton.style.backgroundColor = "#b1f2ff";
 }
 
 // Function to change the background color of the clicked button and reset others
@@ -198,7 +198,7 @@ function changeSortColor(clickedButton) {
   });
 
   // Change the background color of the clicked button
-  clickedButton.style.backgroundColor = "pink";
+  clickedButton.style.backgroundColor = "#b1f2ff";
 }
 
 // This calls the addCards() function when the page is first loaded

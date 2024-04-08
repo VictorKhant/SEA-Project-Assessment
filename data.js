@@ -21,7 +21,7 @@ let videoGames = [
   },
   {
     name: "Grand Theft Auto IV",
-    image: "",
+    image: "https://cdn.mobygames.com/da958c5c-ab6b-11ed-a218-02420a00019e.webp",
     platform: "PlayStation 3",
     release_date: "April 29, 2008",
     summary:
@@ -30,7 +30,7 @@ let videoGames = [
   },
   {
     name: "SoulCalibur",
-    image: "",
+    image: "https://cdn.mobygames.com/566d33a2-aba3-11ed-8bb9-02420a000197.webp",
     platform: "Dreamcast",
     release_date: "September 8, 1999",
     summary:
@@ -39,7 +39,7 @@ let videoGames = [
   },
   {
     name: "Grand Theft Auto IV",
-    image: "",
+    image: "https://store-images.s-microsoft.com/image/apps.55182.69304479265522151.5b8601c1-35b0-4bad-bcff-f51fb0ce43d8.7a35a95c-0e5c-4f03-bf7a-b7c87eaf069b?q=90&w=177&h=265",
     platform: "Xbox 360",
     release_date: "April 29, 2008",
     summary:
@@ -48,7 +48,7 @@ let videoGames = [
   },
   {
     name: "Super Mario Galaxy",
-    image: "",
+    image: "https://cdn.mobygames.com/7a2dd010-abbe-11ed-9ae2-02420a0001a0.webp",
     platform: "Wii",
     release_date: "November 12, 2007",
     summary:
@@ -57,7 +57,7 @@ let videoGames = [
   },
   {
     name: "Super Mario Galaxy 2",
-    image: "",
+    image: "https://cdn.mobygames.com/b884f682-abea-11ed-803a-02420a000131.webp",
     platform: "Wii",
     release_date: "May 23, 2010",
     summary:
@@ -66,7 +66,7 @@ let videoGames = [
   },
   {
     name: "Red Dead Redemption 2",
-    image: "",
+    image: "https://cdn.mobygames.com/f1d0aab0-dc24-11ee-9ce8-02420a00018c.webp",
     platform: "Xbox One",
     release_date: "October 26, 2018",
     summary:
@@ -75,7 +75,7 @@ let videoGames = [
   },
   {
     name: "Grand Theft Auto V",
-    image: "",
+    image: "https://th.bing.com/th/id/OIP.vI_JQiCR2iyXwO_kIYT_KAHaHa?rs=1&pid=ImgDetMain",
     platform: "Xbox One",
     release_date: "November 18, 2014",
     summary:
@@ -84,7 +84,7 @@ let videoGames = [
   },
   {
     name: "Grand Theft Auto V",
-    image: "",
+    image: "https://cdn.mobygames.com/c962d0fe-abeb-11ed-8ce3-02420a000131.webp",
     platform: "PlayStation 3",
     release_date: "September 17, 2013",
     summary:
@@ -93,8 +93,8 @@ let videoGames = [
   },
   {
     name: "Disco Elysium: The Final Cut",
-    image: "",
-    platform: "PC",
+    image: "https://cdn.mobygames.com/24b634ca-ac17-11ed-b85a-02420a000135.webp",
+    platform: "PlayStation 4",
     release_date: "March 30, 2021",
     summary:
       "Disco Elysium - The Final Cut is the definitive edition of the smash-hit RPG. Pursue your political dreams in new quests, meet and question more of the city's locals, and explore a whole extra area. Full voice-acting, controller support, and expanded language options also included. Get even more out of this award-winning open world. You're a detective with a unique skill system at your disposal and a whole city block to carve your path across. Interrogate unforgettable characters, crack murders, or take bribes. Become a hero or an absolute disaster of a human being.",
@@ -102,7 +102,7 @@ let videoGames = [
   },
   {
     name: "Grand Theft Auto V",
-    image: "",
+    image: "https://m.media-amazon.com/images/I/91o41Z-0rWL._SL1500_.jpg",
     platform: "Xbox 360",
     release_date: "September 17, 2013",
     summary:
@@ -111,7 +111,7 @@ let videoGames = [
   },
   {
     name: "Tony Hawk's Pro Skater 2",
-    image: "",
+    image: "https://cdn.mobygames.com/a37e4b64-aba7-11ed-9201-02420a00019c.webp",
     platform: "Dreamcast",
     release_date: "November 6, 2000",
     summary:
@@ -120,7 +120,7 @@ let videoGames = [
   },
   {
     name: "The Legend of Zelda: Breath of the Wild",
-    image: "",
+    image: "https://cdn.mobygames.com/4facb2d0-abfe-11ed-a631-02420a000135.webp",
     platform: "Switch",
     release_date: "March 3, 2017",
     summary:
@@ -129,7 +129,7 @@ let videoGames = [
   },
   {
     name: "Tony Hawk's Pro Skater 3",
-    image: "",
+    image: "https://cdn.mobygames.com/7b662252-aba5-11ed-9505-02420a00019c.webp",
     platform: "PlayStation 2",
     release_date: "October 28, 2001",
     summary:
@@ -138,7 +138,7 @@ let videoGames = [
   },
   {
     name: "Perfect Dark",
-    image: "",
+    image: "https://cdn.mobygames.com/427c2754-abf3-11ed-8d2f-02420a00012e.webp",
     platform: "Nintendo 64",
     release_date: "May 22, 2000",
     summary:
@@ -147,7 +147,7 @@ let videoGames = [
   },
   {
     name: "Red Dead Redemption 2",
-    image: "",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQyXi1Jjdtp7_Pqp7_lK7OjGc5x2pwcD70FadC9sCmbzx4wRisjwYW944IXXHTwqSL16Ru",
     platform: "PlayStation 4",
     release_date: "October 26, 2018",
     summary:
@@ -156,7 +156,7 @@ let videoGames = [
   },
   {
     name: "Grand Theft Auto V",
-    image: "",
+    image: "https://m.media-amazon.com/images/I/916T5H6sCtL._SL1500_.jpg",
     platform: "PlayStation 4",
     release_date: "November 18, 2014",
     summary:
@@ -165,7 +165,7 @@ let videoGames = [
   },
   {
     name: "Metroid Prime",
-    image: "",
+    image: "https://cdn.mobygames.com/fd0d79f8-aba1-11ed-87d1-02420a000197.webp",
     platform: "GameCube",
     release_date: "November 17, 2002",
     summary:
@@ -174,7 +174,7 @@ let videoGames = [
   },
   {
     name: "Grand Theft Auto III",
-    image: "",
+    image: "https://cdn.mobygames.com/0f3447a2-aba1-11ed-bddc-02420a00019e.webp",
     platform: "PlayStation 2",
     release_date: "October 22, 2001",
     summary:
@@ -183,7 +183,7 @@ let videoGames = [
   },
   {
     name: "Super Mario Odyssey",
-    image: "",
+    image: "https://cdn.mobygames.com/7470774c-ac0c-11ed-897b-02420a00012d.webp",
     platform: "Switch",
     release_date: "October 27, 2017",
     summary:
@@ -192,7 +192,7 @@ let videoGames = [
   },
   {
     name: "Halo: Combat Evolved",
-    image: "",
+    image: "https://cdn.mobygames.com/334107d4-aba1-11ed-b951-02420a000197.webp",
     platform: "Xbox",
     release_date: "November 14, 2001",
     summary:
@@ -201,7 +201,7 @@ let videoGames = [
   },
   {
     name: "The House in Fata Morgana - Dreams of the Revenants Edition -",
-    image: "",
+    image: "https://cdn.mobygames.com/ed66f18a-ac0c-11ed-9915-02420a000134.webp",
     platform: "Switch",
     release_date: "April 9, 2021",
     summary:
@@ -210,7 +210,7 @@ let videoGames = [
   },
   {
     name: "NFL 2K1",
-    image: "",
+    image: "https://cdn.mobygames.com/953cfb8a-ab9e-11ed-aecf-02420a000198.webp",
     platform: "Dreamcast",
     release_date: "September 7, 2000",
     summary:
@@ -219,7 +219,7 @@ let videoGames = [
   },
   {
     name: "Half-Life 2",
-    image: "",
+    image: "https://cdn.mobygames.com/adcac0aa-aba9-11ed-8bb9-02420a000197.webp",
     platform: "PC",
     release_date: "November 16, 2004",
     summary:
@@ -228,7 +228,7 @@ let videoGames = [
   },
   {
     name: "Grand Theft Auto V",
-    image: "",
+    image: "https://media.4rgos.it/i/Argos/3792982_R_Z001A",
     platform: "PC",
     release_date: "April 13, 2015",
     summary:
@@ -237,7 +237,7 @@ let videoGames = [
   },
   {
     name: "The Legend of Zelda: Breath of the Wild",
-    image: "",
+    image: "https://cdn.mobygames.com/a5ebf8dc-ab7b-11ed-9e18-02420a00019a.webp",
     platform: "Wii U",
     release_date: "March 3, 2017",
     summary:
@@ -246,7 +246,7 @@ let videoGames = [
   },
   {
     name: "BioShock",
-    image: "",
+    image: "https://cdn.mobygames.com/994ecde4-abc0-11ed-9ae2-02420a0001a0.webp",
     platform: "Xbox 360",
     release_date: "August 21, 2007",
     summary:
@@ -255,7 +255,7 @@ let videoGames = [
   },
   {
     name: "GoldenEye 007",
-    image: "",
+    image: "https://cdn.mobygames.com/1de50296-aba1-11ed-b6ec-02420a00019b.webp",
     platform: "Nintendo 64",
     release_date: "August 25, 1997",
     summary:
@@ -264,7 +264,7 @@ let videoGames = [
   },
   {
     name: "Uncharted 2: Among Thieves",
-    image: "",
+    image: "https://cdn.mobygames.com/6c63167c-ac02-11ed-a631-02420a000135.webp",
     platform: "PlayStation 3",
     release_date: "October 13, 2009",
     summary:
@@ -273,7 +273,7 @@ let videoGames = [
   },
   {
     name: "Resident Evil 4",
-    image: "",
+    image: "https://cdn.mobygames.com/15415b42-ab71-11ed-8bb9-02420a000197.webp",
     platform: "GameCube",
     release_date: "January 11, 2005",
     summary:
@@ -282,7 +282,7 @@ let videoGames = [
   },
   {
     name: "The Orange Box",
-    image: "",
+    image: "https://www.mobygames.com/images/covers/l/95717-the-orange-box-xbox-360-front-cover.jpg",
     platform: "Xbox 360",
     release_date: "October 10, 2007",
     summary:
@@ -291,7 +291,7 @@ let videoGames = [
   },
   {
     name: "The Orange Box",
-    image: "",
+    image: "https://cdn.mobygames.com/f15ea90e-abad-11ed-ba50-02420a000199.webp",
     platform: "PC",
     release_date: "October 10, 2007",
     summary:
@@ -300,7 +300,7 @@ let videoGames = [
   },
   {
     name: "Batman: Arkham City",
-    image: "",
+    image: "https://cdn.mobygames.com/c3b37cf0-ab76-11ed-89d0-02420a00019d.webp",
     platform: "PlayStation 3",
     release_date: "October 18, 2011",
     summary:
@@ -309,7 +309,7 @@ let videoGames = [
   },
   {
     name: "Tekken 3",
-    image: "",
+    image: "https://cdn.mobygames.com/ce0c8bea-abe6-11ed-927d-02420a00012f.webp",
     platform: "PlayStation",
     release_date: "April 29, 1998",
     summary:
@@ -318,7 +318,7 @@ let videoGames = [
   },
   {
     name: "Mass Effect 2",
-    image: "",
+    image: "https://th.bing.com/th/id/OIP.ltLZ-3Za-3lhmupUQehHygHaKW?rs=1&pid=ImgDetMain",
     platform: "Xbox 360",
     release_date: "January 26, 2010",
     summary:
@@ -327,7 +327,7 @@ let videoGames = [
   },
   {
     name: "The Legend of Zelda: Twilight Princess",
-    image: "",
+    image: "https://www.lukiegames.com/assets/images/GC/gc_zelda_twilight_princess_p_7cxg6h.jpg",
     platform: "GameCube",
     release_date: "December 11, 2006",
     summary:
@@ -336,7 +336,7 @@ let videoGames = [
   },
   {
     name: "The Elder Scrolls V: Skyrim",
-    image: "",
+    image: "https://m.media-amazon.com/images/I/91JtTEK529L.jpg",
     platform: "Xbox 360",
     release_date: "November 11, 2011",
     summary:
@@ -345,7 +345,7 @@ let videoGames = [
   },
   {
     name: "Half-Life",
-    image: "",
+    image: "https://cdn.mobygames.com/455b871a-abb9-11ed-aecf-02420a000198.webp",
     platform: "PC",
     release_date: "November 19, 1998",
     summary:
@@ -354,7 +354,7 @@ let videoGames = [
   },
   {
     name: "Resident Evil 4",
-    image: "",
+    image: "https://cdn.mobygames.com/9626da14-abb4-11ed-8bed-02420a00019f.webp",
     platform: "PlayStation 2",
     release_date: "October 25, 2005",
     summary:
@@ -363,7 +363,7 @@ let videoGames = [
   },
   {
     name: "The Legend of Zelda: The Wind Waker",
-    image: "",
+    image: "https://cdn.mobygames.com/cbc9e8c2-aba1-11ed-ac16-02420a000199.webp",
     platform: "GameCube",
     release_date: "March 24, 2003",
     summary:
@@ -372,7 +372,7 @@ let videoGames = [
   },
   {
     name: "Gran Turismo",
-    image: "",
+    image: "https://cdn.mobygames.com/6b5a5c18-abb2-11ed-bddc-02420a00019e.webp",
     platform: "PlayStation",
     release_date: "April 30, 1998",
     summary:
@@ -381,7 +381,7 @@ let videoGames = [
   },
   {
     name: "BioShock",
-    image: "",
+    image: "https://cdn.mobygames.com/994ecde4-abc0-11ed-9ae2-02420a0001a0.webp",
     platform: "PC",
     release_date: "August 21, 2007",
     summary:
@@ -390,7 +390,7 @@ let videoGames = [
   },
   {
     name: "Metal Gear Solid 2: Sons of Liberty",
-    image: "",
+    image: "https://cdn.mobygames.com/077f8174-aba2-11ed-aaf5-02420a00019c.webp",
     platform: "PlayStation 2",
     release_date: "November 12, 2001",
     summary:
@@ -399,7 +399,7 @@ let videoGames = [
   },
   {
     name: "Grand Theft Auto Double Pack",
-    image: "",
+    image: "https://cdn.mobygames.com/5363afb8-aba5-11ed-9b12-02420a00019d.webp",
     platform: "Xbox",
     release_date: "October 31, 2003",
     summary:
@@ -408,7 +408,7 @@ let videoGames = [
   },
   {
     name: "Baldur's Gate II: Shadows of Amn",
-    image: "",
+    image: "https://cdn.mobygames.com/8f71867a-ab9f-11ed-81b6-02420a00019d.webp",
     platform: "PC",
     release_date: "September 24, 2000",
     summary:
@@ -417,7 +417,7 @@ let videoGames = [
   },
   {
     name: "Grand Theft Auto: San Andreas",
-    image: "",
+    image: "https://cdn.mobygames.com/e951e380-abe8-11ed-b85a-02420a000135.webp",
     platform: "PlayStation 2",
     release_date: "October 26, 2004",
     summary:
@@ -426,7 +426,7 @@ let videoGames = [
   },
   {
     name: "Grand Theft Auto: Vice City",
-    image: "",
+    image: "https://cdn.mobygames.com/27a23844-aba1-11ed-bddc-02420a00019e.webp",
     platform: "PlayStation 2",
     release_date: "October 27, 2002",
     summary:
@@ -435,7 +435,7 @@ let videoGames = [
   },
   {
     name: "LittleBigPlanet",
-    image: "",
+    image: "https://cdn.mobygames.com/d4346d12-abcd-11ed-b165-02420a000198.webp",
     platform: "PlayStation 3",
     release_date: "October 27, 2008",
     summary:
@@ -444,7 +444,7 @@ let videoGames = [
   },
   {
     name: "The Legend of Zelda Collector's Edition",
-    image: "",
+    image: "https://cdn.mobygames.com/7866fa94-aba6-11ed-b9a3-02420a000197.webp",
     platform: "GameCube",
     release_date: "November 17, 2003",
     summary:
@@ -453,7 +453,7 @@ let videoGames = [
   },
   {
     name: "Red Dead Redemption",
-    image: "",
+    image: "https://cdn.mobygames.com/407a3108-ac11-11ed-a484-02420a000130.webp",
     platform: "PlayStation 3",
     release_date: "May 18, 2010",
     summary:
@@ -462,7 +462,7 @@ let videoGames = [
   },
   {
     name: "Gran Turismo 3: A-Spec",
-    image: "",
+    image: "https://cdn.mobygames.com/1b9bc5b0-aba1-11ed-b430-02420a0001a0.webp",
     platform: "PlayStation 2",
     release_date: "July 9, 2001",
     summary:
@@ -471,7 +471,7 @@ let videoGames = [
   },
   {
     name: "Halo 2",
-    image: "",
+    image: "https://cdn.mobygames.com/4d6cc6c2-aba9-11ed-b6ec-02420a00019b.webp",
     platform: "Xbox",
     release_date: "November 9, 2004",
     summary:
@@ -480,7 +480,7 @@ let videoGames = [
   },
   {
     name: "The Legend of Zelda: A Link to the Past",
-    image: "",
+    image: "https://cdn.mobygames.com/ed7fd308-aba3-11ed-8bb9-02420a000197.webp",
     platform: "Game Boy Advance",
     release_date: "December 3, 2002",
     summary:
@@ -489,7 +489,7 @@ let videoGames = [
   },
   {
     name: "The Legend of Zelda: Majora's Mask",
-    image: "",
+    image: "https://cdn.mobygames.com/f2a2b242-aba3-11ed-8bb9-02420a000197.webp",
     platform: "Nintendo 64",
     release_date: "October 25, 2000",
     summary:
@@ -498,7 +498,7 @@ let videoGames = [
   },
   {
     name: "The Last of Us",
-    image: "",
+    image: "https://cdn.mobygames.com/27ce602c-abf1-11ed-b7c8-02420a000136.webp",
     platform: "PlayStation 3",
     release_date: "June 14, 2013",
     summary:
@@ -507,7 +507,7 @@ let videoGames = [
   },
   {
     name: "The Legend of Zelda: Twilight Princess",
-    image: "",
+    image: "https://cdn.mobygames.com/28b94fa6-abb5-11ed-ba04-02420a00019f.webp",
     platform: "Wii",
     release_date: "November 19, 2006",
     summary:
@@ -516,7 +516,7 @@ let videoGames = [
   },
   {
     name: "Madden NFL 2003",
-    image: "",
+    image: "https://cdn.mobygames.com/9e6aa55e-abe9-11ed-a12e-02420a000130.webp",
     platform: "PlayStation 2",
     release_date: "August 12, 2002",
     summary:
@@ -525,7 +525,7 @@ let videoGames = [
   },
   {
     name: "Tony Hawk's Pro Skater 2",
-    image: "",
+    image: "https://cdn.mobygames.com/a37e4b64-aba7-11ed-9201-02420a00019c.webp",
     platform: "Game Boy Advance",
     release_date: "May 30, 2001",
     summary:
@@ -534,7 +534,7 @@ let videoGames = [
   },
   {
     name: "Persona 5 Royal",
-    image: "",
+    image: "https://cdn.mobygames.com/25c4ef42-ac02-11ed-b7c8-02420a000136.webp",
     platform: "PlayStation 4",
     release_date: "March 31, 2020",
     summary:
@@ -543,7 +543,7 @@ let videoGames = [
   },
   {
     name: "The Last of Us Remastered",
-    image: "",
+    image: "https://cdn.mobygames.com/9ad3ca08-ab88-11ed-ba50-02420a000199.webp",
     platform: "PlayStation 4",
     release_date: "July 29, 2014",
     summary:
@@ -552,7 +552,7 @@ let videoGames = [
   },
   {
     name: "Tetris Effect: Connected",
-    image: "",
+    image: "https://cdn.mobygames.com/4c678060-ab8f-11ed-89d0-02420a00019d.webp",
     platform: "Switch",
     release_date: "October 8, 2021",
     summary:
@@ -561,7 +561,7 @@ let videoGames = [
   },
   {
     name: "Portal 2",
-    image: "",
+    image: "https://cdn.mobygames.com/61c8b420-abed-11ed-a631-02420a000135.webp",
     platform: "PC",
     release_date: "April 18, 2011",
     summary:
@@ -570,7 +570,7 @@ let videoGames = [
   },
   {
     name: "Red Dead Redemption",
-    image: "",
+    image: "https://cdn.mobygames.com/407a3108-ac11-11ed-a484-02420a000130.webp",
     platform: "Xbox 360",
     release_date: "May 18, 2010",
     summary:
@@ -579,7 +579,7 @@ let videoGames = [
   },
   {
     name: "Portal 2",
-    image: "",
+    image: "https://cdn.mobygames.com/61c8b420-abed-11ed-a631-02420a000135.webp",
     platform: "Xbox 360",
     release_date: "April 19, 2011",
     summary:
@@ -588,7 +588,7 @@ let videoGames = [
   },
   {
     name: "Metal Gear Solid V: The Phantom Pain",
-    image: "",
+    image: "https://cdn.mobygames.com/6acd938c-ab76-11ed-8b6f-02420a00019c.webp",
     platform: "Xbox One",
     release_date: "September 1, 2015",
     summary:
@@ -597,7 +597,7 @@ let videoGames = [
   },
   {
     name: "Portal 2",
-    image: "",
+    image: "https://cdn.mobygames.com/61c8b420-abed-11ed-a631-02420a000135.webp",
     platform: "PlayStation 3",
     release_date: "April 19, 2011",
     summary:
@@ -606,7 +606,7 @@ let videoGames = [
   },
   {
     name: "World of Goo",
-    image: "",
+    image: "https://cdn.mobygames.com/087ebe9c-abe7-11ed-a710-02420a000136.webp",
     platform: "Wii",
     release_date: "October 13, 2008",
     summary:
@@ -615,7 +615,7 @@ let videoGames = [
   },
   {
     name: "The Elder Scrolls V: Skyrim",
-    image: "",
+    image: "https://cdn.mobygames.com/b6dd0e54-abe6-11ed-902e-02420a00012d.webp",
     platform: "PC",
     release_date: "November 10, 2011",
     summary:
@@ -624,7 +624,7 @@ let videoGames = [
   },
   {
     name: "BioShock Infinite",
-    image: "",
+    image: "https://cdn.mobygames.com/5376ee4c-abf1-11ed-8ce3-02420a000131.webp",
     platform: "PlayStation 3",
     release_date: "March 26, 2013",
     summary:
@@ -633,7 +633,7 @@ let videoGames = [
   },
   {
     name: "Final Fantasy IX",
-    image: "",
+    image: "https://cdn.mobygames.com/eb5a863e-aba0-11ed-b9a3-02420a000197.webp",
     platform: "PlayStation",
     release_date: "November 13, 2000",
     summary:
@@ -642,7 +642,7 @@ let videoGames = [
   },
   {
     name: "Call of Duty: Modern Warfare 2",
-    image: "",
+    image: "https://images-na.ssl-images-amazon.com/images/I/81EonCXB05L._AC_SX679_.jpg",
     platform: "PlayStation 3",
     release_date: "November 10, 2009",
     summary:
@@ -651,7 +651,7 @@ let videoGames = [
   },
   {
     name: "God of War",
-    image: "",
+    image: "https://cdn.mobygames.com/e7439ec0-ab80-11ed-aa5a-02420a0001a0.webp",
     platform: "PlayStation 4",
     release_date: "April 20, 2018",
     summary:
@@ -660,7 +660,7 @@ let videoGames = [
   },
   {
     name: "Tony Hawk's Pro Skater 4",
-    image: "",
+    image: "https://cdn.mobygames.com/10854f72-aba4-11ed-934f-02420a0001a0.webp",
     platform: "PlayStation 2",
     release_date: "October 23, 2002",
     summary:
@@ -669,7 +669,7 @@ let videoGames = [
   },
   {
     name: "Devil May Cry",
-    image: "",
+    image: "https://cdn.mobygames.com/400076aa-abae-11ed-b951-02420a000197.webp",
     platform: "PlayStation 2",
     release_date: "October 16, 2001",
     summary:
@@ -678,7 +678,7 @@ let videoGames = [
   },
   {
     name: "Call of Duty 4: Modern Warfare",
-    image: "",
+    image: "https://cdn.mobygames.com/bfbaa7e0-abc1-11ed-b165-02420a000198.webp",
     platform: "PlayStation 3",
     release_date: "November 5, 2007",
     summary:
@@ -687,7 +687,7 @@ let videoGames = [
   },
   {
     name: "Madden NFL 2002",
-    image: "",
+    image: "https://cdn.mobygames.com/39d2d0a0-abec-11ed-b013-02420a00012e.webp",
     platform: "PlayStation 2",
     release_date: "August 19, 2001",
     summary:
@@ -696,7 +696,7 @@ let videoGames = [
   },
   {
     name: "Batman: Arkham City",
-    image: "",
+    image: "https://cdn.mobygames.com/c3b37cf0-ab76-11ed-89d0-02420a00019d.webp",
     platform: "Xbox 360",
     release_date: "October 18, 2011",
     summary:
@@ -705,7 +705,7 @@ let videoGames = [
   },
   {
     name: "Mass Effect 2",
-    image: "",
+    image: "https://cdn.mobygames.com/e2882c74-abef-11ed-b206-02420a000131.webp",
     platform: "PC",
     release_date: "January 26, 2010",
     summary:
@@ -714,7 +714,7 @@ let videoGames = [
   },
   {
     name: "The Legend of Zelda: Ocarina of Time 3D",
-    image: "",
+    image: "https://cdn.mobygames.com/bbbb3214-abed-11ed-b85a-02420a000135.webp",
     platform: "3DS",
     release_date: "June 19, 2011",
     summary:
@@ -723,7 +723,7 @@ let videoGames = [
   },
   {
     name: "Chrono Cross",
-    image: "",
+    image: "https://cdn.mobygames.com/1425491a-abeb-11ed-9fde-02420a000132.webp",
     platform: "PlayStation",
     release_date: "August 15, 2000",
     summary:
@@ -732,7 +732,7 @@ let videoGames = [
   },
   {
     name: "Celeste",
-    image: "",
+    image: "https://publish.one37pm.net/wp-content/uploads/2018/12/celeste-mobile.jpg",
     platform: "Xbox One",
     release_date: "January 26, 2018",
     summary:
@@ -741,7 +741,7 @@ let videoGames = [
   },
   {
     name: "BioShock",
-    image: "",
+    image: "https://juegosdigitalesmex.com/wp-content/uploads/2021/03/bioshock_ps3.jpg",
     platform: "PlayStation 3",
     release_date: "October 21, 2008",
     summary:
@@ -750,7 +750,7 @@ let videoGames = [
   },
   {
     name: "Mass Effect 2",
-    image: "",
+    image: "https://cdn.mobygames.com/1e885f30-abed-11ed-9f21-02420a00013a.webp",
     platform: "PlayStation 3",
     release_date: "January 17, 2011",
     summary:
@@ -759,7 +759,7 @@ let videoGames = [
   },
   {
     name: "Grand Theft Auto: Vice City",
-    image: "",
+    image: "https://wallpaperaccess.com/full/2243596.jpg",
     platform: "PC",
     release_date: "May 12, 2003",
     summary:
@@ -768,7 +768,7 @@ let videoGames = [
   },
   {
     name: "Madden NFL 2004",
-    image: "",
+    image: "https://cdn.mobygames.com/4427df4e-ab9e-11ed-837d-02420a00019b.webp",
     platform: "PlayStation 2",
     release_date: "August 12, 2003",
     summary:
@@ -777,7 +777,7 @@ let videoGames = [
   },
   {
     name: "Gears of War",
-    image: "",
+    image: "https://cdn.mobygames.com/a21699a8-abc4-11ed-b165-02420a000198.webp",
     platform: "Xbox 360",
     release_date: "November 7, 2006",
     summary:
@@ -786,7 +786,7 @@ let videoGames = [
   },
   {
     name: "The Elder Scrolls IV: Oblivion",
-    image: "",
+    image: "https://cdn.mobygames.com/0eacdb04-abb1-11ed-b951-02420a000197.webp",
     platform: "Xbox 360",
     release_date: "March 20, 2006",
     summary:
@@ -795,7 +795,7 @@ let videoGames = [
   },
   {
     name: "Sid Meier's Civilization II",
-    image: "",
+    image: "https://cdn.mobygames.com/1cc39d08-aba3-11ed-9d05-02420a000198.webp",
     platform: "PC",
     release_date: "February 29, 1996",
     summary:
@@ -804,7 +804,7 @@ let videoGames = [
   },
   {
     name: "Quake",
-    image: "",
+    image: "https://cdn.mobygames.com/d690698a-abb9-11ed-ba04-02420a00019f.webp",
     platform: "PC",
     release_date: "June 22, 1996",
     summary:
@@ -813,7 +813,7 @@ let videoGames = [
   },
   {
     name: "Call of Duty 4: Modern Warfare",
-    image: "",
+    image: "https://store-images.s-microsoft.com/image/apps.23065.64885830279055674.bddbfbcd-ded1-4f52-b344-10a98e886656.ade407ea-be79-465b-871f-47885d7fb443?q=90&w=177&h=265",
     platform: "Xbox 360",
     release_date: "November 5, 2007",
     summary:
@@ -822,7 +822,7 @@ let videoGames = [
   },
   {
     name: "BioShock Infinite",
-    image: "",
+    image: "https://cdn.mobygames.com/5376ee4c-abf1-11ed-8ce3-02420a000131.webp",
     platform: "PC",
     release_date: "March 25, 2013",
     summary:
@@ -831,7 +831,7 @@ let videoGames = [
   },
   {
     name: "Halo 3",
-    image: "",
+    image: "https://cdn.mobygames.com/013a92ec-aba5-11ed-ab77-02420a000198.webp",
     platform: "Xbox 360",
     release_date: "September 25, 2007",
     summary:
@@ -840,7 +840,7 @@ let videoGames = [
   },
   {
     name: "Ninja Gaiden Black",
-    image: "",
+    image: "https://cdn.mobygames.com/9258c5d8-abb3-11ed-b6ec-02420a00019b.webp",
     platform: "Xbox",
     release_date: "September 20, 2005",
     summary:
@@ -849,7 +849,7 @@ let videoGames = [
   },
   {
     name: "The Elder Scrolls IV: Oblivion",
-    image: "",
+    image: "https://cdn.mobygames.com/0eacdb04-abb1-11ed-b951-02420a000197.webp",
     platform: "PC",
     release_date: "March 20, 2006",
     summary:
@@ -858,7 +858,7 @@ let videoGames = [
   },
   {
     name: "Street Fighter IV",
-    image: "",
+    image: "https://m.media-amazon.com/images/I/81EB4GpRFuL.jpg",
     platform: "PlayStation 3",
     release_date: "February 17, 2009",
     summary:
@@ -867,7 +867,7 @@ let videoGames = [
   },
   {
     name: "Super Mario Advance 4: Super Mario Bros. 3",
-    image: "",
+    image: "https://cdn.mobygames.com/9cd4c850-abad-11ed-8b6f-02420a00019c.webp",
     platform: "Game Boy Advance",
     release_date: "October 21, 2003",
     summary:
@@ -876,7 +876,7 @@ let videoGames = [
   },
   {
     name: "Jet Grind Radio",
-    image: "",
+    image: "https://cdn.mobygames.com/118cdc44-ab65-11ed-8f62-02420a000179.webp",
     platform: "Dreamcast",
     release_date: "October 30, 2000",
     summary:
@@ -885,7 +885,7 @@ let videoGames = [
   },
   {
     name: "Metal Gear Solid",
-    image: "",
+    image: "https://cdn.mobygames.com/13916026-aba8-11ed-9e47-02420a00019f.webp",
     platform: "PlayStation",
     release_date: "October 21, 1998",
     summary:
