@@ -167,7 +167,23 @@ button a{
 .filter button:hover{
     background-color: rgba(0, 136, 169, 1);
 }
+.sort{
+    margin-left: 3cm;
+}
+.sort button{
+    font-size: 1.5em;
+    background-color: #CBD6E2;
+    margin-right: 20px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
 
+.sort button:hover{
+    background-color: rgba(0, 136, 169, 1);
+}
 .search{
     width: max-content;
     display: flex;

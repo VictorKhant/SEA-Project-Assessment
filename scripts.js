@@ -22,14 +22,15 @@
  *    with the string you added to the array, but a broken image.
  * 
  */
-// Images of Video Games
+// Importing data of video games
 import videoGames from "./data.js";
-
-// This is an array of strings (Video Games objects)
 let filteredGames = [];
 let sort_genre = "";
 let sort_order = "";
 let is_searched = false;
+let last_platform = "ALL";
+// This is an array of strings (Video Games objects)
+
 // Your final submission should have much more data than this, and
 // you should use more than just an array of strings to store it all.
 
@@ -74,8 +75,7 @@ function editCardContent(card, newTitle) {
   console.log("new card:", newTitle, "- html: ", card);
 }
 
-// This calls the addCards() function when the page is first loaded
-document.addEventListener("DOMContentLoaded", showCards());
+
 
 window.quoteAlert = function () {
   console.log("Button Clicked!");
@@ -91,20 +91,32 @@ window.removeLastCard = function () {
 
 window.filteredCard = function (platform) {
   let temp = [];
+  if(last_platform!="ALL" || platform=="ALL"){
+    document.getElementById("search-input").value = "";
+    is_searched = false;
+  }
+  
+  last_platform=platform;
+  
   if (!is_searched) {
     temp = videoGames;
   } else {
     temp = filteredGames;
   }
   filteredGames = [];
-  if (platform == "ALL") return showCards();
+ 
+
+  if (platform == "ALL") {
+    return showCards();
+  }
 
   for (let i = 0; i < temp.length; i++) {
     if (temp[i].platform.includes(platform)) {
       filteredGames.push(temp[i]);
     }
   }
-  if (sort_genre != "") return sortedCard(sort_genre, sort_order);
+
+  if (sort_genre != "" && filteredGames.length!=0) return sortedCard(sort_genre, sort_order);
 
   return showCards(filteredGames);
 };
@@ -133,14 +145,23 @@ window.sortedCard = function (category = "release", order = "descend") {
 // Function to perform search
 function searchGames() {
   if (filteredGames.length == 0) filteredGames = videoGames;
-  const searchText = document
-    .getElementById("search-input")
-    .value.toLowerCase();
+  const searchText = document.getElementById("search-input").value.toLowerCase();
+
+  const buttons = document.querySelectorAll(".filter button");
+
+  // Reset all buttons to a default color
+  buttons.forEach(
+    (button) => {
+      button.style.backgroundColor = "snow";
+    }
+  );
+  last_platform="ALL";
 
   // Check if the search text is empty
   if (searchText.length == 0) {
     is_searched = false;
     filteredGames = videoGames;
+    if (sort_genre != "") return sortedCard(sort_genre, sort_order);
     return showCards(videoGames); // Display all games if the search is cleared
   }
 
@@ -152,5 +173,56 @@ function searchGames() {
   return showCards(filteredGames);
 }
 
-// Event listener for search input
+// Function to change the background color of the clicked button and reset others
+function changeFilterColor(clickedButton) {
+  // Select all buttons within the filter class
+  const buttons = document.querySelectorAll(".filter button");
+
+  // Reset all buttons to a default color
+  buttons.forEach((button) => {
+    button.style.backgroundColor = "snow";
+  });
+
+  // Change the background color of the clicked button
+  clickedButton.style.backgroundColor = "pink";
+}
+
+// Function to change the background color of the clicked button and reset others
+function changeSortColor(clickedButton) {
+  // Select all buttons within the filter class
+  const buttons = document.querySelectorAll(".sort button");
+
+  // Reset all buttons to a default color
+  buttons.forEach((button) => {
+    button.style.backgroundColor = "snow";
+  });
+
+  // Change the background color of the clicked button
+  clickedButton.style.backgroundColor = "pink";
+}
+
+// This calls the addCards() function when the page is first loaded
+document.addEventListener("DOMContentLoaded", showCards());
+
+// Detecting input in search box
 document.getElementById("search-input").addEventListener("input", searchGames);
+
+// changing color of filter buttons on click
+document.addEventListener("DOMContentLoaded", () => {
+  const filterButtons = document.querySelectorAll(".filter button");
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      changeFilterColor(this); // changing color of click button
+    });
+  });
+});
+
+//changing color of sort buttons
+document.addEventListener("DOMContentLoaded", () => {
+  const filterButtons = document.querySelectorAll(".sort button");
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      changeSortColor(this); // changing color of click button
+    });
+  });
+});

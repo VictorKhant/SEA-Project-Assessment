@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navdiv a {
+    color: white;
+    padding: 10px;
+    display: inline-block;
+}
+
+.navdiv ul {
+    list-style: none;
+    display: flex;
+}
+
+.navdiv li {
+    margin-right: 20px;
+}
+
+button {
+    background-color: #f4f4f4;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+.main-header {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.title {
+    margin: 0;
+}
+
+.search {
+    padding: 20px;
+    text-align: center;
+}
+
+.search input[type="search"] {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.filter {
+    margin: 20px;
+    text-align: center;
+}
+
+/* Container for the cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;  /* Ensures space between cards */
+    padding: 20px;
+}
+
+/* Styling individual cards */
+.card {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;  /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);  /* Subtle shadow */
+    overflow: hidden;  /* Ensures no content spills out */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;  /* Smooth transition for hover effect */
+    width: calc(100% / 3 - 40px);  /* Three cards per row, adjust margin accordingly */
+}
+
+/* Hover effect for cards */
+.card:hover {
+    transform: scale(1.05);  /* Slightly enlarges the card */
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);  /* Stronger shadow on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .card {
+        width: calc(100% / 2 - 40px);  /* Two cards per row on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;  /* One card per row on very small screens */
+    }
+}
+
+
+.card h2 {
+    font-size: 1.5em;
+}
+
+.card img {
+    max-width: 100%;
+    display: block;
+}
+
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
