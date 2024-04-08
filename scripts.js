@@ -66,9 +66,9 @@ function editCardContent(card, newTitle) {
   cardImage.alt = newTitle.name + " Poster";
 
   const cardDes = card.querySelectorAll("li");
-  cardDes[0].textContent = newTitle.release_date;
-  cardDes[1].textContent = "Platform: " + newTitle.platform;
-  cardDes[2].textContent = "Rating: " + newTitle.user_review;
+  cardDes[2].textContent = newTitle.release_date;
+  cardDes[0].textContent = "Platform: " + newTitle.platform;
+  cardDes[1].textContent = "Rating: " + newTitle.user_review;
   // You can use console.log to help you debug!
   // View the output by right clicking on your website,
   // select "Inspect", then click on the "Console" tab

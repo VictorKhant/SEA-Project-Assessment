@@ -82,6 +82,7 @@ button:hover {
 .filter {
     margin: 20px;
     text-align: center;
+    justify-content: center;
 }
 
 /* Container for the cards */
