@@ -139,12 +139,15 @@ button a{
     list-style: none;
 }
 
+.sort,
 .filter{
     text-align: center;
 }
+
+.sort button,
 .filter button{
     font-size: 1em;
-    background-color: #CBD6E2;
+    background-color: snow;
     margin-right: 10px;
     padding: 5px;
     border-radius: 10px;
@@ -152,20 +155,9 @@ button a{
     margin-top: 5px;
     border: 2px solid #ccc;
 }
-
-.sort{
-    margin-left: 20px;
-    text-align: center;
-}
-.sort button{
-    font-size: 1em;
-    background-color: #CBD6E2;
-    margin-right: 10px;
-    padding: 5px;
-    border-radius: 10px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    border: 2px solid #ccc;
+.sort button:hover,
+.filter button:hover{
+    background-color: #b1f2ff;
 }
 
 .search{
