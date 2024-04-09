@@ -119,7 +119,7 @@ function changeFilterColor(clickedButton) {
   });
 
   // Change the background color of the clicked button
-  clickedButton.style.backgroundColor = "#b1f2ff";
+  clickedButton.style.backgroundColor = "#67cde1";
 }
 
 // Function to change the background color of the clicked button and reset others
@@ -133,7 +133,7 @@ function changeSortColor(clickedButton) {
   });
 
   // Change the background color of the clicked button
-  clickedButton.style.backgroundColor = "#b1f2ff";
+  clickedButton.style.backgroundColor = "#67cde1";
 }
 
 // This calls the addCards() function when the page is first loaded
@@ -231,3 +231,21 @@ function showModalFunction(card) {
       }
   }
 }
+
+/*
+window.addGame = function(){
+  const newName = document.getElementById("newName").value;
+  const newPlatform = document.getElementById("newPlatform").value;
+  const newRelease_date = document.getElementById("newRelease_date").value;
+  const newImage= document.getElementById("newImg").value;
+  const newRating= document.getElementById("newRating").value;
+  const newSummary= document.getElementById("newSummary").value;
+  console.log("here");
+  if(newName=="" || newPlatform=="" || newRelease_date==""){
+    alert("Error! All the fields must be filled.");
+    return;
+  }
+
+  const newCard= {name: newName, image: newImage, platform: newPlatform, release_date: newRelease_date, summary: newSummary, user_review: newRating};
+  videoGames.push(newCard);
+}*/

@@ -162,6 +162,9 @@ button a{
 .sort button:hover,
 .filter button:hover{
     background-color: #b1f2ff;
+    transform: scale(1.1);  /* Slightly enlarges the card */
+    font-weight: bold;
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);  /* Stronger shadow on hover */
 }
 
 .search{
@@ -345,3 +348,46 @@ button a{
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
 }
+
+/*
+.newGame{
+    text-align: center;
+}
+
+.addName, .addPlatform, .addRelease, .addImg {
+    font-size: 1.5em;
+    margin: 1% 35%; 
+    text-align: justify;
+    font-weight: bold;
+}
+
+.addGameBody{
+    background-image: url("https://media.istockphoto.com/id/165102644/photo/old-paper.jpg?s=612x612&w=0&k=20&c=W9yT9C4BqkrknYgR0nqK5L790p-9bj762fpGq3mmMo0=");
+}
+
+.newGame button{
+    font-size: 1em;
+    background-color: snow;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+}
+
+.newGame button:hover{
+    background-color: #b1f2ff;
+    transform: scale(1.1);  
+    font-weight: bold;
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);  
+}
+
+.addName input, .addPlatform input, .addRelease input, .addImg input {
+    width: 100%;
+    font-size: 0.8em;
+    border-radius: 5px;
+    outline: none;
+    border:none;
+    
+}*/
