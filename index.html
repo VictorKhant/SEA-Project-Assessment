@@ -29,7 +29,7 @@
             </ul>
         </div>
     </nav>
-    <div>
+
     <header class="main-header">
         <h1 class="title">1990s Video Games Catalog</h1>
     </header>
@@ -65,19 +65,20 @@
         <button class="sortbtn">release new-old</button>
     </div>
 
-    <div id="card-container">
-    </div>
+    <div id="card-container"> </div>
 
     <div class="card" style="display: none;">
-        <div class="card-content">
-            <h2>Vido Games Title</h2>
-            <img class="game-image" src="" alt="Video Games Poster">
-            <ul>
-                <li>Platform:</li>
-                <li>Rating</li>
-                <li>Unknown Release Date</li>
-            </ul>
-        </div>
+        <a class= "detail">
+            <div class="card-content">
+                <h2>Video Games Title</h2>
+                <img class="game-image" src="" alt="Video Games Poster">
+                <ul>
+                    <li>Platform:</li>
+                    <li>Rating</li>
+                    <li>Unknown Release Date</li>
+                </ul>
+            </div>
+        </a>
     </div>
 
     <div class="footer">
@@ -99,6 +100,16 @@
             <span class="designer">Myat Khant</span>
         </p>
     </div>
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img class="modalImage" src="" alt="Video Games Poster">
+            <h2 id="modalTitle">Modal Title</h2>
+            <p id="modalBody">Some text in the Modal Body</p>
+        </div>
+    </div>
+
 </body>
 
 </html>

@@ -150,7 +150,7 @@ filterbtns.forEach(function(button) {
       document.querySelector('.filter .clicked').classList.remove('clicked');
       button.classList.add('clicked');
       changeFilterColor(this);
-      showCards(); // Call showCards again to refresh
+      showCards(); //refresh the cards
   });
 });
 
@@ -161,6 +161,73 @@ sortbtns.forEach(function(button) {
       document.querySelector('.sort .clicked').classList.remove('clicked');
       button.classList.add('clicked');;
       changeSortColor(this);
-      showCards(); // Call showCards again to refresh
+      showCards(); //refresh the cards
   });
 });
+
+/*
+// Select all elements with the 'detail' class within cards
+const detailLinks = document.querySelectorAll('.card .detail');
+// Add click event listeners to each detail link
+detailLinks.forEach(link => { 
+    link.addEventListener('click', function(event) {
+      // Access information about the card
+      const cardName = this.parentNode.querySelector('.card-content h2').textContent;
+      const cardPlatform = this.parentNode.querySelector('.card-content li').textContent.replace("Platform: ","");
+      const foundGame=findGame(cardName,cardPlatform);
+
+      // Create pop up 
+      showModalFunction(foundGame);
+    });
+});*/
+
+//detecting if specific card is clicked
+const cardContainer = document.getElementById('card-container');
+cardContainer.addEventListener('click', function(event) {
+    const card = event.target.closest('.card');
+    if (card) {
+        const cardTitle = card.querySelector('h2').textContent;
+        const cardPlatform = card.querySelector('li').textContent.replace("Platform: ",""); // Assuming there's a <p> with summary
+        const foundGame=findGame(cardTitle,cardPlatform);
+
+    // Create pop up 
+    showModalFunction(foundGame);
+    }
+});
+
+function findGame(name, platform) {
+  return videoGames.find(game => 
+      game.name == name && 
+      game.platform == platform);
+}
+
+function showModalFunction(card) {
+  // Get the modal elements
+  let modal = document.getElementById("myModal");
+  const modalImage = document.querySelector(".modal-content img");
+  let modalTitle = document.getElementById("modalTitle");
+  let modalBody = document.getElementById("modalBody");
+  let span = document.getElementsByClassName("close")[0];
+
+  // Set the content of the modal
+  modalImage.src = card.image;
+  modalImage.alt = card.name + " Poster";
+
+  modalTitle.textContent = card.name;
+  modalBody.textContent = card.summary;
+
+  // Display the modal
+  modal.style.display = "block";
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+      modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+}
